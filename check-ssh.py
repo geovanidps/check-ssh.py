@@ -32,12 +32,12 @@ def check_ssh_vulnerabilities(banner):
         # Vulnerabilidades OpenSSH
         'OpenSSH_8.4': 'Possivelmente vulnerável a CVE-2021-41617 (Problema de permissões de arquivo)',
         'OpenSSH_8.2': 'Possivelmente vulnerável a CVE-2020-14145 (Problema de bypass de autenticação)',
-        'OpenSSH_7.9': 'Possivelmente vulnerável a CVE-2018-15473 (Falha de enumeração de usuários)',
+        'OpenSSH_7.9': 'Possivelmente vulnerável a CVE-2018-15473 (Falha de enumeração de usuarios)',
         'OpenSSH_7.4': 'Possivelmente vulnerável a CVE-2016-10012 (Execução de código remoto)',
         'OpenSSH_6.6.1': 'Possivelmente vulnerável a CVE-2015-5600 (Ataque de força bruta no teclado interativo)',
         'OpenSSH_7.2': 'Possivelmente vulnerável a CVE-2016-0777 e CVE-2016-0778 (Vazamento de memória e chave privada)',
         'OpenSSH_5.8': 'Possivelmente vulnerável a CVE-2011-5000 (Bypass de autenticação), CVE-2011-4327 (Negação de serviço), CVE-2011-3268 (Enumeração de usuários), CVE-2010-4478 (Facilitação de força bruta)',
-        'OpenSSH_5.3': 'Possivelmente vulnerável a CVE-2018-15473 (Falha de enumeração de usuários)',
+        'OpenSSH_5.3': 'Possivelmente vulnerável a CVE-2018-15473 (Falha de enumeração de usuarios)',
 
         # Vulnerabilidades libssh
         'libssh-0.8.1': 'Possivelmente vulnerável a CVE-2018-10933 (Autenticação de bypass)',
@@ -60,7 +60,7 @@ def check_ssh_vulnerabilities(banner):
     print("[+] Nenhuma vulnerabilidade conhecida detectada.")
     return None
 
-# Função principal que coleta a URL e tenta identificar vulnerabilidades em múltiplas portas
+# Função principal que coleta a URL e tenta identificar vulnerabilidades em maltiplas portas
 def main():
     if len(sys.argv) != 2:
         print(f"Uso: {sys.argv[0]} <host>")
